@@ -2,6 +2,15 @@
 
 ## F.A.S.T - Financial Analytics with Stock Prediction, Sentimental Analysis and Timeseries Forecasting
 
+## Business Case:
+### Summary: 
+The stock market has fluctuated heavily in recent times due to various events and the world is in need to make the best of data engineering for the financial domain. We aim to find how much impact the financial news has on the stock market trends. From Market Research, Forecasting is need of the Hour to make investment strategies for Client, 
+Client also needs a way to speed up decision making by 80% using innovative Data engineering Techniques.
+
+### End Goal : To develop a Saas Product to let User handle following client requirements, as use cases:
+
+ 
+
 ## Project Report:
 https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
 
