@@ -177,7 +177,7 @@ You need to retrieve AWS credentials that allow your AWS CLI to access AWS resou
 3. Change the Keys in the app.py file
 
 #### Steps to get the Data
-1. git clone the repo https://github.com/jayshilj/Team3_CSYE7245_Spring2021/FinalProject
+1. git clone the repo https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
 2. In "Data" folder we have file to run the api and the Scrapper function. This is also scheduled with AWS Lambda in AWS console to run daily and can be modified as per the need.
 3. This will get us the data in S3 bucket.
 4. Now, We will have a Data in S3 bucket. Now use the AWS glue scripts to build Glue jobs to extract data from S3 buckets, transform it and load it into the Redshift Data Warehouse.
