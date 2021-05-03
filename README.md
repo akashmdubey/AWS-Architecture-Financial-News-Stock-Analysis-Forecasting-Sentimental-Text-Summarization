@@ -213,7 +213,7 @@ If everything is successful it shows an Open App button. We can now open the app
 
 
 #### Docker setup for app:
-1. git clone the repo https://github.com/jayshilj/Team3_CSYE7245_Spring2021/FinalProject
+1. git clone the repo https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization
 2. docker build -t stock_app:1.0 . -- this references the Dockerfile at . (current directory) to build our Docker image & tags the docker image with stock_app:1.0
 3. Run docker images & find the image id of the newly built Docker image, OR run docker images | grep stock_app:1.0 | awk '{print $3}'
 4. docker run -it --rm -p 5000:5000 {image_id} stock_app:1.0 -- this refers to the image we built to run a Docker container.
