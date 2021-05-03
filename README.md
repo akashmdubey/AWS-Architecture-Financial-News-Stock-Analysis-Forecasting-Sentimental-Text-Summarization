@@ -18,7 +18,7 @@ https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEE
 https://youtu.be/Cz6BZuHbf7U
 
 ## Streamlit App for Functions/Operations on Stock, News, Twitter & Google Trends
-http://ec2-18-232-35-95.compute-1.amazonaws.com:8501/
+http://ec2-18-232-35-95.compute-1.amazonaws.com:8080/
 
 ## F.A.S.T Website with Live Interactive Dashboard Integrated
 http://ec2-18-232-35-95.compute-1.amazonaws.com:5000/
