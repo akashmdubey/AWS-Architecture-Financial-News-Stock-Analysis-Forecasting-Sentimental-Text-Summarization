@@ -5,7 +5,7 @@
 ## Business Case:
 ### Summary: 
 The stock market has fluctuated heavily in recent times due to various events and the world is in need to make the best of data engineering for the financial domain. We aim to find how much impact the financial news has on the stock market trends. From Market Research, Forecasting is need of the Hour to make investment strategies for Client, 
-Client also needs a way to speed up decision making by 80% using innovative Data engineering Techniques.
+Client also needs a way to speed up decision making by 80% using innovative Data engineering Techniques to help Core management team summarize Financial meetings from audio files via SaaS product, along with features like Protecting User Data etc. thus helping Other teams access the data for further use.  
 
 ### End Goal : To develop a Saas Product to let User handle following client requirements, as use cases:
 ![](https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization/blob/main/Use_Case.jpg)
