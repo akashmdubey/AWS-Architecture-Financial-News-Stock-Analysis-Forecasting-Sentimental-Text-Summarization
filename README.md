@@ -267,6 +267,8 @@ Amazon Simple Notification Service will be used for any pipeline failures, succe
 ## Authors
 <b>[Akash M Dubey](https://www.linkedin.com/in/akashmdubey/)</b> 
 
+## Contributors
+
 <b>[Sagar Shah](https://www.linkedin.com/in/shahsagar95/)</b> 
 
 <b>[Jayshil Jain](https://www.linkedin.com/in/jayshiljain/)</b> 
