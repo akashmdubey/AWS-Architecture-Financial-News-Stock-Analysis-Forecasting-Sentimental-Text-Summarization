@@ -11,13 +11,13 @@ https://codelabs-preview.appspot.com/?file_id=11_uaC--B3Yz0_ux-d8Pb0SZlrfnj4xPv_
 ## YouTube Presentation:
 https://youtu.be/Cz6BZuHbf7U
 
-## Streamlit App
+## Streamlit App for Functions/Operations on Stock
 http://ec2-18-232-35-95.compute-1.amazonaws.com:8501/
 
-## Flask App
+## F.A.S.T Website with Live Interactive Dashboard Integrated
 http://ec2-18-232-35-95.compute-1.amazonaws.com:5000/
 
-## Architecture 
+## AWS Architecture - Serverless Design - Fully automated triggered pipeline - Octacore Pipelines
 
 ![](https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization/blob/main/Architecture%20Final%20AWS_FAST.jpg)
 
