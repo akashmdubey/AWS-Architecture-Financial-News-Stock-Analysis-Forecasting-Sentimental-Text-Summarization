@@ -1,5 +1,5 @@
 ## Project
-### FAST - Financial Analytics with Stock Prediction and Timeseries Forecasting
+## FAST - Financial Analytics with Stock Prediction and Timeseries Forecasting
 
 ## Project Report:
 https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
