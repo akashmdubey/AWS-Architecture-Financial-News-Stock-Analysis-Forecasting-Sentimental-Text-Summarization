@@ -1,5 +1,6 @@
-## Project
-## FAST - Financial Analytics with Stock Prediction and Timeseries Forecasting
+## Product F.A.S.T  ( SaaS product on AWS Octa-core architecture)  
+
+## F.A.S.T - Financial Analytics with Stock Prediction, Sentimental Analysis and Timeseries Forecasting
 
 ## Project Report:
 https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
@@ -8,7 +9,7 @@ https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEE
 https://codelabs-preview.appspot.com/?file_id=11_uaC--B3Yz0_ux-d8Pb0SZlrfnj4xPv_C8cT1E3ZQs#1
 
 ## YouTube Presentation:
-https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
+https://youtu.be/Cz6BZuHbf7U
 
 ## Streamlit App
 http://ec2-18-232-35-95.compute-1.amazonaws.com:8501/
