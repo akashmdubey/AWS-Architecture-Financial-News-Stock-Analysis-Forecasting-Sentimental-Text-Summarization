@@ -12,10 +12,10 @@ Client also needs a way to speed up decision making by 80% using innovative Data
  
 
 ## Project Report:
-https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
+![](https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1)
 
 ## YouTube Presentation:
-https://youtu.be/Cz6BZuHbf7U
+![](https://youtu.be/Cz6BZuHbf7U)
 
 ## Streamlit App for Functions/Operations on Stock
 http://ec2-18-232-35-95.compute-1.amazonaws.com:8501/
