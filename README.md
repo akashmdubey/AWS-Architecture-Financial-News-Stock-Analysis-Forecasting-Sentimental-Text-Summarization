@@ -5,9 +5,6 @@
 ## Project Report:
 https://codelabs-preview.appspot.com/?file_id=1qxniFjwkDir6NT17KkvS1zDbmIgawcrEEwbbfCtAk8k#1
 
-## Project Proposal:
-https://codelabs-preview.appspot.com/?file_id=11_uaC--B3Yz0_ux-d8Pb0SZlrfnj4xPv_C8cT1E3ZQs#1
-
 ## YouTube Presentation:
 https://youtu.be/Cz6BZuHbf7U
 
