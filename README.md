@@ -17,7 +17,7 @@ http://ec2-18-232-35-95.compute-1.amazonaws.com:8501/
 ## F.A.S.T Website with Live Interactive Dashboard Integrated
 http://ec2-18-232-35-95.compute-1.amazonaws.com:5000/
 
-## AWS Architecture - Serverless Design - Fully automated triggered pipeline - Octacore Pipelines
+## AWS Architecture - Serverless Design - Fully automated triggered, Octacore Pipelines
 
 ![](https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization/blob/main/Architecture%20Final%20AWS_FAST.jpg)
 
