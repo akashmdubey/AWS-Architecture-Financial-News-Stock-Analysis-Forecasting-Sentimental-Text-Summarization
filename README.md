@@ -264,14 +264,8 @@ Collated results are sent for report generation through the Reporting tool
 Amazon Simple Notification Service will be used for any pipeline failures, successful runs, and triggering email notifications.
 
 
-## Authors
+## Author :  
 <b>[Akash M Dubey](https://www.linkedin.com/in/akashmdubey/)</b> 
-
-## Contributors
-
-<b>[Sagar Shah](https://www.linkedin.com/in/shahsagar95/)</b> 
-
-<b>[Jayshil Jain](https://www.linkedin.com/in/jayshiljain/)</b> 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
