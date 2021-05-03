@@ -1,0 +1,126 @@
+ <!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Stock Prediction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../static/css/main.css" />
+	</head>
+	<body>
+
+			<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="{{url_for('homepage')}}">Stock Prediction</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="{{url_for('homepage')}}">Home</a></li>
+					<li><a href="{{url_for('dataeda')}}">Data</a></li>
+					<li><a href="{{url_for('show_architecture')}}">Architecture</a></li>
+					<li><a href="{{url_for('sentimentanalysis')}}">Sentiment Analysis</a></li>
+					<li><a href="{{url_for('timeseriesanalysis')}}">Time Series Forecasting</a></li>
+					<li><a href="{{url_for('metric')}}">Metrics</a></li>
+					<li><a href="{{url_for('cloud')}}">Cloud Providers</a></li>
+					<li><a href="{{url_for('electronics')}}">Electronics Sector</a></li>
+					<li><a href="{{url_for('retail')}}">Retail Sector</a></li>
+					<li><a href="{{url_for('health')}}">Health Sector</a></li>
+					<li><a href="{{url_for('automobile')}}">Automabile Sector</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="../static/architecture.gif" alt="" />
+
+				</article>
+			</section>
+
+		<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+						<p style="font-size:x-large;font-weight:bold;color:black;">Architecture</p>
+						<img src="../static/Final_AWS_FAST.jpg" alt="" />
+						<br>
+						<br>
+						<br>
+						<h4>1.	WEB SCRAPING, DATA PREPROCESSING, LABELLING PIPELINE : Extracted data from Tweet, Google Trends and scraped data from Financial News by invoking step functions Lambda functionAWS, labelled using Bert model & stored it in S3 bucket.</h4>
+						<h4>2.	EXTRACT TRANSFORM LOAD PIPELINE: Cloud Watch triggers series of Crawlers network to fill catalog, Jobs in AWS Glue to clean and merge the data and store it on Redshift in a data warehouse.</h4>
+						<h4>3.	USER AUTHENTICATION PIPELINE : Users need to login with cognito token via Email service and data is stored in AWS dynamo db</h4>
+						<h4>4.	FINANCIAL MEETING CALL TRANSCRIBTION, SUMMARIZATION, SENTIMENT PIPELINE:  Pulled the data from S3 for 1. Summarization 2. Sentiment Analysis 3. Audio to Text using AMZ transcribe.</h4>
+						<h4>5.	FORECASTING PIPELINE: FB prophet is used for predicting stock prices of data  </h4>
+						<h4>6.	STREAMING PIPELINE : Users can get real time tweet data from Streamlit - Lambda workflow </h4>
+						<h4>7.	MASKING ENTITY PIPELINE : Users can get masked data via Lambda - Amazon Comprehend pipeline</h4>
+						<h4>8.	INTERACTIVE FLASK WEB APP : Created a Flask web application to show the analysis and findings using PowerBI and deployed it on EC2/ Heroku.</h4>
+					</header>
+					<!-- <header class="align-left">
+						<p style="font-size:x-large;font-weight:bold;color:black;">Design Considerations</p>
+						<ul>
+							<li><h4>Scraping the content from Wall Street Journal of each date for a 2 year long period was taking significant amount of time. For example: For the date 1st March 2018 there were 132 articles so it took half an hour to scrape that much data. We tried scraping the content for a week along with the article's headlines and fed it to Amazon Comprehend. We found out that there was not much difference in the sentiment we got from both. So instead of scraping huge amounts of data we scraped the articles headlines to get similar results but with less time.</h4></li>
+						<li><h4>While extracting the stock price data using Alpha Vantage API we got the data in JSON format. The ETL jobs to transform this data and make it ready for further analysis would take more than 10 minutes.We then tried transforming the data from JSON to CSV format which reduced our ETL job run time to 5-6 minutes.</h4></li>
+						<li><h4>We could have shown the visualizations in QuickSight which is an Amazon product just like most of our pipeline which would have been easier because Quicksight can take data directly from S3 bucket. To make it scalable and make the data available for other tools we thought of loading the data to Redshift which would make it easier to connect to other visualization tools like PowerBI, Tableau.</h4></li>
+						<li><h4>To increase the scalability of the pipeline we used triggers so that we can extract the data and see the analysis and forecasting in real time.</h4></li>
+						</ul>
+					</header> -->
+				</div>
+		</section>
+
+
+		<!-- Two -->
+			<section id="footer" class="wrapper style2" style="background-color:black;padding-top:0px;">
+				<div class="inner">
+					<header class="align-center">
+                            <br>
+                            <br>
+						<table border="1" style="font-size:large;">
+							<tr>
+								<td></td>
+								<td style="font-style:italic;">Created By</td>
+								<td></td>
+							</tr>
+							<tr style="font-weight:bold;">
+								<td><a href ='https://www.linkedin.com/in/jayshiljain/'>Jayshil Jain</td>
+								<td><a href = 'https://www.linkedin.com/in/shahsagar95/'>Sagar Shah</td>
+								<td><a href = 'https://www.linkedin.com/in/akashmdubey/'>Akash Dubey</td>
+							</tr>
+							<tr>
+								<td></td>
+                                <br>
+								<td class="copyright">&copy; Untitled. All rights reserved</td>
+								<td></td>
+							</tr>
+						</table>
+					</header>
+
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<!--<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>-->
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/jquery.scrollex.min.js"></script>
+			<script src="../static/js/skel.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+	</body>
+</html>

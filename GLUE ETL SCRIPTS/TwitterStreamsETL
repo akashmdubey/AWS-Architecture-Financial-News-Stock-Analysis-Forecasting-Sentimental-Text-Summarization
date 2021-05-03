@@ -1,0 +1,46 @@
+import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+from awsglue.job import Job
+
+## @params: [TempDir, JOB_NAME]
+args = getResolvedOptions(sys.argv, ['TempDir','JOB_NAME'])
+
+sc = SparkContext()
+glueContext = GlueContext(sc)
+spark = glueContext.spark_session
+job = Job(glueContext)
+job.init(args['JOB_NAME'], args)
+## @type: DataSource
+## @args: [database = "twitterlivefroms3", table_name = "twitterdata_csv", transformation_ctx = "datasource0"]
+## @return: datasource0
+## @inputs: []
+datasource0 = glueContext.create_dynamic_frame.from_catalog(database = "twitterlivefroms3", table_name = "twitterdata_csv", transformation_ctx = "datasource0")
+## @type: ApplyMapping
+## @args: [mapping = [("col0", "string", "likes", "long"), ("col1", "string", "rt", "long"), ("col2", "string", "col2", "string"), ("col3", "string", "col3", "string"), ("col4", "string", "isverified", "string"), ("col5", "string", "id", "long"), ("col6", "string", "col6", "string"), ("col7", "string", "col7", "string"), ("col8", "string", "col8", "string"), ("col9", "string", "col9", "string"), ("col10", "string", "company", "string"), ("col11", "string", "tweet", "string"), ("col12", "string", "user_location", "string"), ("col13", "string", "user_name", "string"), ("col14", "string", "clean_tweet", "string"), ("col15", "string", "sentiment", "string"), ("col16", "string", "tweet_date", "string")], transformation_ctx = "applymapping1"]
+## @return: applymapping1
+## @inputs: [frame = datasource0]
+applymapping1 = ApplyMapping.apply(frame = datasource0, mappings = [("col0", "string", "likes", "long"), ("col1", "string", "rt", "long"), ("col2", "string", "col2", "string"), ("col3", "string", "col3", "string"), ("col4", "string", "isverified", "string"), ("col5", "string", "id", "long"), ("col6", "string", "col6", "string"), ("col7", "string", "col7", "string"), ("col8", "string", "col8", "string"), ("col9", "string", "col9", "string"), ("col10", "string", "company", "string"), ("col11", "string", "tweet", "string"), ("col12", "string", "user_location", "string"), ("col13", "string", "user_name", "string"), ("col14", "string", "clean_tweet", "string"), ("col15", "string", "sentiment", "string"), ("col16", "string", "tweet_date", "string")], transformation_ctx = "applymapping1")
+## @type: SelectFields
+## @args: [paths = ["sentiment", "tweet_date", "rt", "user_name", "clean_tweet", "company", "id", "tweet", "user_location", "isverified", "likes"], transformation_ctx = "selectfields2"]
+## @return: selectfields2
+## @inputs: [frame = applymapping1]
+selectfields2 = SelectFields.apply(frame = applymapping1, paths = ["sentiment", "tweet_date", "rt", "user_name", "clean_tweet", "company", "id", "tweet", "user_location", "isverified", "likes"], transformation_ctx = "selectfields2")
+## @type: ResolveChoice
+## @args: [choice = "MATCH_CATALOG", database = "tweetslivefromredshift", table_name = "kronosdev_public_twitter", transformation_ctx = "resolvechoice3"]
+## @return: resolvechoice3
+## @inputs: [frame = selectfields2]
+resolvechoice3 = ResolveChoice.apply(frame = selectfields2, choice = "MATCH_CATALOG", database = "tweetslivefromredshift", table_name = "kronosdev_public_twitter", transformation_ctx = "resolvechoice3")
+## @type: ResolveChoice
+## @args: [choice = "make_cols", transformation_ctx = "resolvechoice4"]
+## @return: resolvechoice4
+## @inputs: [frame = resolvechoice3]
+resolvechoice4 = ResolveChoice.apply(frame = resolvechoice3, choice = "make_cols", transformation_ctx = "resolvechoice4")
+## @type: DataSink
+## @args: [database = "tweetslivefromredshift", table_name = "kronosdev_public_twitter", redshift_tmp_dir = TempDir, transformation_ctx = "datasink5"]
+## @return: datasink5
+## @inputs: [frame = resolvechoice4]
+datasink5 = glueContext.write_dynamic_frame.from_catalog(frame = resolvechoice4, database = "tweetslivefromredshift", table_name = "kronosdev_public_twitter", redshift_tmp_dir = args["TempDir"], transformation_ctx = "datasink5")
+job.commit()
