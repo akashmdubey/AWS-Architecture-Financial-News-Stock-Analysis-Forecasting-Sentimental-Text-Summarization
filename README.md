@@ -8,7 +8,7 @@ The stock market has fluctuated heavily in recent times due to various events an
 Client also needs a way to speed up decision making by 80% using innovative Data engineering Techniques.
 
 ### End Goal : To develop a Saas Product to let User handle following client requirements, as use cases:
-
+![](https://github.com/akashmdubey/AWS-Architecture-Financial-News-Stock-Analysis-Forecasting-Sentimental-Text-Summarization/blob/main/Use_Case.jpg)
  
 
 ## Project Report:
